@@ -5,11 +5,11 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install
+RUN npm install --production && npm install serve
 
 COPY . .
 
 RUN npm run build
+EXPOSE 3000
 
-EXPOSE 80
-
-CMD [ "npm", "start" ]
+CMD [ "npx", "serve", "-s", "dist", "-l", "3000" ]
