@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --mode development",
+    "start": "vite preview --host",
     "dev": "vite --mode development",
     "build": "vite build --mode production",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
@@ -24,7 +23,8 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.18.0",
     "react-select": "^5.8.0",
-    "yup": "^1.3.2"
+    "yup": "^1.3.2",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
