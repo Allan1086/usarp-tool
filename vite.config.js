@@ -6,13 +6,13 @@ export default defineConfig({
   base: "/",
   plugins: [svgr(), react()],
   server: {
-    port: process.env.PORT || 5173, 
+    port: process.env.PORT || 3000, 
     strictPort: true,
     host: true,
-    origin: process.env.ORIGIN || "http://localhost:5173", 
+    origin: process.env.ORIGIN || "http://localhost:3000", 
   },
   preview: {
-    port: process.env.PREVIEW_PORT || 5173, 
+    port: process.env.PREVIEW_PORT || 3000, 
     strictPort: true,
   },
   define: {
